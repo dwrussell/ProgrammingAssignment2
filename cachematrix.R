@@ -20,9 +20,8 @@ makeCacheMatrix <- function(x = matrix()) {
 	list(set = set, get = get, setinverse = setinverse, getinverse = getinverse)
 }
 
-
-## Write a short comment describing this function
-
+## This function determines whether the input argument matrix (x) exists in cache
+## and returns it if it does or computes it, caches it, and returns it if it doesn't
 cacheSolve <- function(x, ...) {
         ## Return a matrix that is the inverse of 'x'
         ## use solve() to calculate it if not cached
